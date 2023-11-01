@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/9a32e4ec84.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Login | Online_Gadget_Store</title>
+  </head>
+  <body>
+    <!-- naviagation-bar -->
+    <nav>
+      <div class="login-nav-bar">
+        <div id="nav-left-logo">LOGO</div>
+        <div id="nav-right-section">
+          <p>
+            <span class="hidden-p">Don't have an account?</span>
+            <a href="sign-up.html" id="switch-btn">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </nav>
+    <!-- naviagation-bar -->
+    <main>
+      <div class="login-form-container">
+        <h1>Welcome back!</h1>
+
+        <label for="email" class="label">Email</label>
+        <div class="form-input-field">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          /><i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <label for="password" class="label">Password</label>
+        <div class="form-input-field">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            oninput="checkInput(this)"
+            placeholder="Enter password"
+            required
+          /><i
+            id="password-icon"
+            class="fa-solid fa-lock"
+            onclick="togglePasswordVisibility()"
+          ></i>
+        </div>
+        <a href="#" class="forgot-password">forgot password?</a>
+        <button class="login-btn" onclick="validateForm()">Login</button>
+      </div>
+    </main>
+
+    <!-- footer-section -->
+
+    <footer class="login-footer">
+      <p>&copy; Online_Gadget_Store @ <span>2023</span></p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
