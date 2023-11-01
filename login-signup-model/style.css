@@ -1,0 +1,243 @@
+/* Universal codes */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@500;700;900&display=swap");
+
+:root {
+  --Light-Grey: #f5f5f5;
+  --Medium-Grey: #d3d3d3;
+  --Black: #000;
+  --Vibrant-Purple: #e75897;
+  --Electric-Blue: #7b68ee;
+  --Olive-Green: #00a86b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-image: url(./Img-assets/2.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 40% 60%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  height: 100vh;
+  width: 100%;
+}
+input:focus {
+  box-shadow: 1px 1px 5px 1px var(--Medium-Grey);
+  outline: 0;
+}
+label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+  text-align: start;
+  margin: 10px 2px;
+}
+
+.fa-lock,
+.fa-envelope,
+.fa-eye-slash,
+.fa-eye,
+.fa-user {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 20px;
+}
+footer {
+  position: relative;
+  top: 35px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+span {
+  color: var(--Black);
+}
+
+button {
+  cursor: pointer;
+}
+
+.hidden-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  /* color: var(--Light-Grey); */
+}
+
+#switch-btn {
+  margin: 0 15px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding: 15px 25px;
+  color: var(--Vibrant-Purple);
+  background-color: var(--Light-Grey);
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 1px var(--Vibrant-Purple, 0.9);
+}
+
+.form-input-field {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-input-field input {
+  width: 100%;
+  padding: 15px 30px;
+  border: 1px solid var(--Medium-Grey);
+  border-radius: 5px;
+}
+
+/* universal codes */
+
+/* Login_page codes */
+
+.login-nav-bar,
+.signup-nav-bar {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+#nav-left-logo {
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: var(--Medium-Grey);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.login-form-container a {
+  /*forgot_password*/
+  position: relative;
+  top: -20px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--Electric-Blue);
+  border: none;
+  border-radius: 5px;
+  color: var(--Light-Grey);
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  /* background-color: red; */
+}
+.login-btn:hover {
+  transform: scale(1.01);
+  opacity: 1;
+}
+.login-form-container {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px var(--Medium-Grey, 0.4);
+  z-index: 10;
+}
+
+.login-form-container h1,
+.signup-form-container h1 {
+  background: linear-gradient(
+    45deg,
+    var(--Electric-Blue),
+    var(--Vibrant-Purple)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 2.2rem;
+  padding: 0 10px 10px 20px;
+  margin-bottom: 30px;
+}
+
+/* Login_page codes */
+/* Sign_up_page codes */
+
+#signup-btn:hover {
+  opacity: 1;
+  background-color: var(--Vibrant-Purple);
+  color: var(--Light-Grey);
+}
+
+.signup-form-container {
+  width: 95%;
+  max-width: 520px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px var(--Medium-Grey, 0.4);
+  z-index: 10;
+}
+
+.sign-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--Electric-Blue);
+  border: none;
+  border-radius: 5px;
+  color: var(--Light-Grey);
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.sign-btn:hover {
+  transform: scale(1.01);
+  opacity: 1;
+}
+
+/* Sign_up_page codes */
+
+/* media query */
+
+@media only screen and (max-width: 860px) {
+  html,
+  body {
+    background-image: url(./Img-assets/2.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 10% 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .signup-form-container,
+  .login-form-container {
+    width: 80%;
+    /* padding: 20px; */
+  }
+  .hidden-p {
+    display: none;
+  }
+}
+
+/* media query */

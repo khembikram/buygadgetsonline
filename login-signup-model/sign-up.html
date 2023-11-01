@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/9a32e4ec84.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SignUp | Online_Gadget_Store</title>
+  </head>
+  <body>
+    <nav>
+      <div class="signup-nav-bar">
+        <div id="nav-left-logo">LOGO</div>
+        <div id="nav-right-section">
+          <p>
+            <span class="hidden-p">Already have an account ?</span>
+            <a href="index.html" id="switch-btn">Login</a>
+          </p>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="signup-form-container">
+        <h1>Let's go!</h1>
+
+        <label for="Fullname">Fullname</label>
+        <div class="form-input-field">
+          <input
+            type="text"
+            name="Fullname"
+            placeholder="James Doe"
+            id="fullname"
+            required
+          /><i class="fa-solid fa-user"></i>
+        </div>
+        <label for="email" class="label">Email</label>
+        <div class="form-input-field">
+          <input
+            type="email"
+            placeholder="example@site.com"
+            id="email"
+            required
+          /><i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <label for="password">Password</label>
+        <div class="form-input-field">
+          <input
+            type="password"
+            id="password"
+            oninput="checkInput(this)"
+            placeholder="Minimum 8 characters"
+            required
+          /><i
+            id="password-icon"
+            class="fa-solid fa-lock"
+            onclick="togglePasswordVisibility()"
+          ></i>
+        </div>
+        <button class="sign-btn" onclick="validateForm()">Sign Up</button>
+      </div>
+    </main>
+    <footer class="Sign-footer">
+      <p>&copy; Online_Gadget_Store @ <span>2023</span></p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
